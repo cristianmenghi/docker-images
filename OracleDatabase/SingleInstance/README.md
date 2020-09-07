@@ -91,14 +91,13 @@ On the first startup of the container a random password will be generated for th
 #### docker-compose.yaml
 
 
-version: '3'
-  
-services:
-     oracle-db:
-      image: oracle/database:18.4.0-xe
-      ports:
-	- 1521:1521
-	- 5500:5500
+	version: '3'
+		services:
+     			oracle-db:
+      			image: oracle/database:18.4.0-xe
+			      ports:
+				- 1521:1521
+				- 5500:5500
 
 
 **Note:** The ORACLE_SID for Express Edition is always `XE` and cannot be changed, hence there is no ORACLE_SID parameter provided for the XE build.
